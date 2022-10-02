@@ -1,0 +1,89 @@
+<form [formGroup]="orderForm" (ngSubmit)="onOrderFormSubmitted(orderForm)">
+  <div>
+    <mat-form-field appearance="fill"
+      ><mat-label>Customer Name</mat-label
+      ><input
+        matInput
+        type="text"
+        placeholder="Customer Name"
+        formControlName="customerName"
+        required
+      /><mat-error *ngIf="orderForm.get('customerName')!.invalid"
+        >customerName is invalid</mat-error
+      ></mat-form-field
+    >
+  </div>
+  <div>
+    <mat-form-field appearance="fill"
+      ><mat-label>Order Number</mat-label
+      ><input
+        matInput
+        type="text"
+        placeholder="Order Number"
+        formControlName="orderNumber"
+        required
+      /><mat-error *ngIf="orderForm.get('orderNumber')!.invalid"
+        >orderNumber is invalid</mat-error
+      ></mat-form-field
+    >
+  </div>
+  <div>
+    <mat-form-field appearance="fill"
+      ><mat-label>Order Name</mat-label
+      ><input
+        matInput
+        type="text"
+        placeholder="Order Name"
+        formControlName="orderName"
+        required
+      /><mat-error *ngIf="orderForm.get('orderName')!.invalid"
+        >orderName is invalid</mat-error
+      ></mat-form-field
+    >
+  </div>
+  <div>
+    <mat-form-field appearance="fill"
+      ><mat-label>Price</mat-label
+      ><input
+        matInput
+        type="text"
+        placeholder="Price"
+        formControlName="price"
+        required
+      /><mat-error *ngIf="orderForm.get('price')!.invalid"
+        >price is invalid</mat-error
+      ></mat-form-field
+    >
+  </div>
+  <div>
+    <mat-form-field appearance="fill"
+      ><mat-label>Vendor Name</mat-label
+      ><input
+        matInput
+        type="text"
+        placeholder="Vendor Name"
+        formControlName="vendorName"
+        required
+      /><mat-error *ngIf="orderForm.get('vendorName')!.invalid"
+        >vendorName is invalid</mat-error
+      ></mat-form-field
+    >
+  </div>
+  <div>
+    <mat-form-field appearance="fill"
+      ><mat-label>Date</mat-label
+      ><input
+        matInput
+        type="text"
+        placeholder="Date"
+        formControlName="date"
+        required
+      /><mat-error *ngIf="orderForm.get('date')!.invalid"
+        >date is invalid</mat-error
+      ></mat-form-field
+    >
+  </div>
+  <div>
+    <button type="submit" mat-raised-button color="primary">Submit</button>
+  </div>
+</form>

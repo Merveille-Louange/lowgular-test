@@ -1,0 +1,16 @@
+<!--<mat-card-->
+<!--  ><mat-card-title>Order List</mat-card-title><mat-card-content>-->
+
+<!--</mat-card-content-->
+<!--&gt;-->
+<!--</mat-card>-->
+<mat-list role="list" class="mat-elevation-z8"
+  ><mat-list-item role="listitem" *ngFor="let item of orderList$ | async">{{
+    item.vendorName
+  }}</mat-list-item></mat-list
+>
+<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+  <mat-button-toggle value="bold" routerLink="/new-order" >add order</mat-button-toggle>
+<!--  <mat-button-toggle value="italic">Italic</mat-button-toggle>-->
+<!--  <mat-button-toggle value="underline">Underline</mat-button-toggle>-->
+</mat-button-toggle-group>
