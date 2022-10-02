@@ -12,8 +12,8 @@ import {Observable} from "rxjs";
 })
 export class OrderListComponent {
   readonly orderList$: Observable<OrderModel[]> = this.orderService.getAll();
-  //this constructor wasn't generated with lowgular, due to an error
-  //occurring in the lowgular service injection
+
+
   constructor(public orderService:OrderService) {
   }
 
