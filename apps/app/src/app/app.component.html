@@ -1,4 +1,9 @@
 
-
-
+<mat-toolbar color="primary">
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+<!--    <mat-button-toggle value="bold">Bold</mat-button-toggle>-->
+    <mat-button-toggle value="bold" routerLink="/product">products</mat-button-toggle>
+    <mat-button-toggle value="bold" routerLink="add-product">Add Product</mat-button-toggle>
+  </mat-button-toggle-group>
+</mat-toolbar>
 <router-outlet></router-outlet>

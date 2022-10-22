@@ -1,0 +1,5 @@
+<mat-list role="list" class="mat-elevation-z8"
+  ><mat-list-item role="listitem" *ngFor="let item of productList$ | async" (click)="openDetails(item.id)" >{{
+    item.title
+  }}</mat-list-item></mat-list
+>
